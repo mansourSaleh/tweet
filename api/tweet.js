@@ -18,7 +18,7 @@ module.exports = async (req, res) => {
         for (let i = 0; i < trends.length; i++) {
             const hash = trends[i];
             const tweet = await client.post('statuses/update', {
-                status: `اي ويتر النادل الذكي \n @iwaiterMENA \n  ${randomTweet}  \n \n ${hash}`
+                status: `اي ويتر النادل الذكي \n @iwaiterMENA \n  ${randomTweet}  \n \n ${hash} #00${i}`
             })
         }
         await res.send("Done")
