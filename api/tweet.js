@@ -24,7 +24,7 @@ module.exports = async (req, res) => {
         await res.send("Done")
     } catch (error) {
         console.log(error)
-        res.send("Error")
+        res.send(error)
     }
 }
 
